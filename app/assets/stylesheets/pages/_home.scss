@@ -13,87 +13,119 @@
 //   text-align: center;
 // }
 
-.ben-head {
-  color: white;
-  font-size: 30px;
-  padding: 28px 24px;
-  border-radius: 4px;
-  transition: background 0.3s ease;
-  z-index: 1;
+.main-container {
   position: relative;
-  right: -1000px;
-  top: 550px;
-  opacity:80%;
-  // box-shadow: 0 0 5px #fffaf3;
-  border: 3px solid #fffaf3;
 }
 
-.explore {
-  color: white;
-  text-decoration: none;
+.main-header {
+  position: relative;
+  right: -500px;
+  top: 200px;
+
+  width: 490px;
 }
+
+.main-header h1 {
+  font-family: 'Rubik Mono One', sans-serif;
+  color: white;
+  font-size: 80px;
+  border-bottom: 10px solid #28D3EF;
+}
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #28D3EF;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #1BCB7F;
+  color: white;
+}
+
+// .ben-head {
+//   color: white;
+//   font-size: 30px;
+//   padding: 28px 24px;
+//   border-radius: 4px;
+//   transition: background 0.3s ease;
+//   z-index: 1;
+//   position: relative;
+//   right: -1000px;
+//   top: 550px;
+//   opacity:80%;
+//   // box-shadow: 0 0 5px #fffaf3;
+//   border: 3px solid #fffaf3;
+// }
+
+// .explore {
+//   color: white;
+//   text-decoration: none;
+// }
 
 #myVideo {
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  opacity: 70%;
+  width:100%;
+  height:100vh;
+  object-fit: cover;
   z-index: -1;
+  filter: grayscale(100%) contrast(85%);
 }
 
-.gb {
-  padding: 38px 50px;
-  // margin-right: 25px;
-  cursor: pointer;
-  font-size: 35px;
-  border-radius: 4px;
-  opacity: 70%;
-}
+// .gb {
+//   padding: 38px 50px;
+//   // margin-right: 25px;
+//   cursor: pointer;
+//   font-size: 35px;
+//   border-radius: 4px;
+//   opacity: 70%;
+// }
 
-.gb-bordered {
-  padding: 6px 20px;
-  position: relative;
-  border: 6px solid #fffaf3;
+// .gb-bordered {
+//   padding: 6px 20px;
+//   position: relative;
+//   border: 6px solid #fffaf3;
+//   background-clip: padding-box;
+//   transition: .5s all;
 
-  background-clip: padding-box;
-  transition: .5s all;
+//   &:after {
+//     transition: 1.5s all;
+//     position: absolute;
+//     top: -$border-width;
+//     left: -$border-width;
+//     right: -$border-width;
+//     bottom: -$border-width;
+//     content: '';
+//     z-index: -1;
+//     border-radius: 4px;
+//   }
+// }
 
-  &:after {
-    transition: 1.5s all;
-    position: absolute;
-    top: -$border-width;
-    left: -$border-width;
-    right: -$border-width;
-    bottom: -$border-width;
-    content: '';
-    z-index: -1;
-    border-radius: 4px;
-  }
-}
+// .hover-slide {
+//   transition: .6s all;
 
-.hover-slide {
-  transition: .6s all;
+//   &:after {
+//     background-size: 200% 100%;
+//     background-position: 0% 0;
+//   }
+//   &:hover {
+//     &:after {
+//       background-position: 100% 0;
+//     }
+//   }
+// }
 
-  &:after {
-    background-size: 200% 100%;
-    background-position: 0% 0;
-  }
-  &:hover {
-    &:after {
-      background-position: 100% 0;
-    }
-  }
-}
-
-#gb9 {
-  background-color: transparent;
-  color: white;
-  &:after {
-    background-image: linear-gradient(135deg, rgb(255,165,0) 0%, rgb(255,165,0) 12.5%,rgb(255,165,0) 12.5%, rgb(204,112,0) 25%,rgb(204,112,0) 25%, rgb(204,112,0) 37.5%,rgb(0,128,128) 37.5%, rgb(0,128,128) 50%,rgb(0,128,128) 50%, rgb(28, 87, 192) 62.5%,rgb(0,139,139) 62.5%, rgb(0,139,139) 75%,rgb(0,139,139) 75%, rgb(0,255,255) 87.5%,rgb(0,255,255) 87.5%, rgb(0,255,255) 100%);
-  }
-  &:hover {
-    color: white;
-  }
-}
+// #gb9 {
+//   background-color: transparent;
+//   color: white;
+//   &:after {
+//     background-image: linear-gradient(135deg, rgb(255,165,0) 0%, rgb(255,165,0) 12.5%,rgb(255,165,0) 12.5%, rgb(204,112,0) 25%,rgb(204,112,0) 25%, rgb(204,112,0) 37.5%,rgb(0,128,128) 37.5%, rgb(0,128,128) 50%,rgb(0,128,128) 50%, rgb(28, 87, 192) 62.5%,rgb(0,139,139) 62.5%, rgb(0,139,139) 75%,rgb(0,139,139) 75%, rgb(0,255,255) 87.5%,rgb(0,255,255) 87.5%, rgb(0,255,255) 100%);
+//   }
+//   &:hover {
+//     color: white;
+//   }
+// }
