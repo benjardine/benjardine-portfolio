@@ -12,16 +12,20 @@
 // .main-border h1 {
 //   text-align: center;
 // }
-
-.main-container {
-  position: relative;
+.header-container {
+height:100vh;
 }
-
 .main-header {
   position: absolute;
   top: 27%;
   left: 30%;
   width: 490px;
+}
+
+.spotify {
+  position: relative;
+  right: 10%;
+  top: 10%;
 }
 
 
@@ -234,21 +238,42 @@ a:hover .bottom:after {
   83.3%,95.96% {transform:translate3d(0,-33.3%,0);}
 }
 
-// 6 is the number of animation.
-// Here, there are 4 lines :
+.separater {
+  height: 25px;
+  background-color: #28D3EF;
+}
 
-// 1 to 2
-// 2 to 3
-// 3 to 4
-// 4 to 3
-// 3 to 2
-// 2 to 1
+.about-container {
+  background-color: #28D3EF;
+}
 
-// 6x + 6y = 100 (100% duration)
+.about-header h1{
+  text-align: center;
+  font-family: 'Rubik Mono One', sans-serif;
+  color: white;
+}
 
-// HERE :
-// y = 4 -> Animation between two lines
-// x = 12.66 -> Time spent on a line
+.right-side {
+  background-color: #28D3EF;
+}
 
-// You can define a value and calculate the other if you want change speed or the number of lines
+.left-side {
+  background-color: #28D3EF;
+}
+
+
+.tech-skills {
+background-color: #28D3EF;
+  border: 3px solid #fffaf3;
+}
+
+.icons-row {
+  font-size: 45px;
+}
+
+.tech-border {
+  background-color: #28D3EF;
+  padding: 10px;
+}
+
 
