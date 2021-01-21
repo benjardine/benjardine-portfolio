@@ -245,6 +245,8 @@ a:hover .bottom:after {
 
 .about-container {
   background-color: #28D3EF;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .about-header h1{
@@ -253,18 +255,12 @@ a:hover .bottom:after {
   color: white;
 }
 
-.right-side {
-  background-color: #28D3EF;
-}
-
-.left-side {
-  background-color: #28D3EF;
-}
-
 
 .tech-skills {
 background-color: #28D3EF;
-  border: 3px solid #fffaf3;
+align-items: center;
+justify-content: center;
+
 }
 
 .icons-row {
