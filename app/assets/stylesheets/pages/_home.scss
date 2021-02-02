@@ -1,20 +1,10 @@
-// Specific CSS for your home-page
-// background-color: #487346;
-// background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%23608f57' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%2374ad69' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%23608f57' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%2374ad69' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%2389CC7C' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%237f8f53' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%239bad64' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%239bad64' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%237f8f53' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%237f8f53' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%239bad64' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
 
-
-// .main-border {
-//   background-image: url('https://source.unsplash.com/oy9vCFfSXyk');
-//   background-repeat: no-repeat;
-//   background-size: 100vw;
-// }
-
-// .main-border h1 {
-//   text-align: center;
-// }
 .header-container {
 height:100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
+
 .main-header {
   position: absolute;
   top: 27%;
@@ -22,35 +12,14 @@ height:100vh;
   width: 490px;
 }
 
-.spotify {
-  position: relative;
-  right: 10%;
-  top: 10%;
-}
-
 
 .main-header h1 {
   font-family: 'Rubik Mono One', sans-serif;
   color: white;
-  font-size: 80px;
+  font-size: 5vw;
   border-bottom: 10px solid #28D3EF;
 }
 
-.btn-flat {
-  color: white;
-  padding: 8px 24px;
-  border-radius: 4px;
-  background: #28D3EF;
-  transition: background 0.3s ease;
-  position: absolute;
-  bottom: 30%;
-  left: 40%;
-}
-
-.btn-flat:hover {
-  background: #1BCB7F;
-  color: white;
-}
 
 .bottom {
   display: inline-block;
@@ -61,7 +30,7 @@ height:100vh;
   margin-left: 0.75em;
   position: absolute;
   bottom: 8%;
-  left: 44%;
+  left: 47%;
 }
 
 a {
@@ -104,41 +73,12 @@ a:hover .bottom:after {
   filter: grayscale(100%) contrast(85%);
 }
 
-.content__container__list__item {
-  text-align: center;
-}
 
 
-.content {
-  position: absolute;
-  top: 65%;
-  left: 47%;
-  transform: translate(-50%, -50%);
-  height: 160px;
-  overflow:hidden;
+.container {
 
-  font-family: 'Rubik Mono One', sans-serif;
-  font-size: 17px;
-  line-height: 40px;
-  color: #ecf0f1;
-
-  &__container {
-    font-weight: 600;
     overflow: hidden;
     height: 40px;
-    padding: 0 40px;
-
-    &:before {
-      content: '[';
-      left: 0;
-    }
-
-    &:after {
-      content: ']';
-      position: absolute;
-      right: 0;
-    }
-
     &:after, &:before {
       position: absolute;
       top: 0;
@@ -158,12 +98,12 @@ a:hover .bottom:after {
     &__text {
       display: inline;
       float: left;
-      margin: 0;
+      margin: 30px;
     }
 
     &__list {
       margin-top: 0;
-      padding-left: 10px;
+      padding-left: 1px;
       text-align: left;
       list-style: none;
 
@@ -177,10 +117,12 @@ a:hover .bottom:after {
       &__item {
         line-height:40px;
         margin:0;
+        color: white;
+        font-family: 'Rubik Mono One', sans-serif;
+        text-align: left;
       }
     }
   }
-}
 
 @-webkit-keyframes opacity {
   0%, 100% {opacity:0;}
@@ -239,21 +181,22 @@ a:hover .bottom:after {
 }
 
 .separater {
-  height: 25px;
+  height: 60px;
   background-color: #28D3EF;
 }
 
-.about-container {
-  background-color: #28D3EF;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+#about-container {
+  background-color: white;
 }
 
 .about-header h1{
   text-align: center;
   font-family: 'Rubik Mono One', sans-serif;
-  color: white;
+  color: black;
+  margin-bottom: 140px;
+  padding-top: 40px;
 }
+
 
 
 .tech-skills {
@@ -270,6 +213,30 @@ justify-content: center;
 .tech-border {
   background-color: #28D3EF;
   padding: 10px;
+}
+
+.about-middle {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column: span 2;
+}
+
+.about-text {
+  text-align: center;
+  padding: 0 100px;
+}
+
+.about-image {
+  filter: grayscale(100%);
+  text-align: center;
+  padding: 30px;
+}
+
+.about-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
 }
 
 
